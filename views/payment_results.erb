@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Omnicalc-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <h1>
+  Payment Results
+</h1>
+<dl>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    <%= @apr %>
+  </dd>
+
+  <dt>
+    Number of years
+  </dt>
+  <dd>
+    <%= @num %>
+  </dd>
+
+  <dt>
+    Principal
+  </dt>
+  <dd>
+    <%= @principal %>
+  </dd>
+
+  <dt>
+    Payment
+  </dt>
+  <dd>
+    <%= @payment %>
+  </dd>
+</dl>
+<a href="/payment/new">
+  Calculate another payment
+</a>
+  </body>
+</html>
